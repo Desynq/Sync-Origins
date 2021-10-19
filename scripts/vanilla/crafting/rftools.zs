@@ -3,19 +3,19 @@ recipes.addShaped(
 	<rftools:saturation_module>,
 	[
 		[
-			lumiumPlate,
-			iridiumPlate,
-			lumiumPlate
+			<thermalfoundation:material:358>, // Lumium Plate
+			<thermalfoundation:material:327>, // Iridium Plate
+			<thermalfoundation:material:358> // Lumium Plate
 		],
 		[
-			iridiumPlate,
-			infiniteFruit,
-			iridiumPlate
+			<thermalfoundation:material:327>, // Iridium Plate
+			<botania:infinitefruit>, // Apple of Grisaia
+			<thermalfoundation:material:327> // Iridium Plate
 		],
 		[
-			lumiumPlate,
-			iridiumPlate,
-			lumiumPlate
+			<thermalfoundation:material:358>, // Lumium Plate
+			<thermalfoundation:material:327>, // Iridium Plate
+			<thermalfoundation:material:358> // Lumium Plate
 		]
 	]
 );
