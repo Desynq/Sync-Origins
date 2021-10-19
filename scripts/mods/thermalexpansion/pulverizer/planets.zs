@@ -1,5 +1,5 @@
 mods.thermalexpansion.Pulverizer.addRecipe(
-	rawMeteoricIron * 2,
-	itemMeteorite,
+	<galacticraftcore:meteoric_iron_raw> * 2,
+	<galacticraftcore:fallen_meteor>,
 	8000
 );
