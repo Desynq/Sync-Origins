@@ -1,0 +1,2 @@
+mods.thermalexpansion.Infuser.removeRecipe(chargedCertusQuartz);
+mods.thermalexpansion.Infuser.removeRecipe(chargedCertusQuartzOre);
