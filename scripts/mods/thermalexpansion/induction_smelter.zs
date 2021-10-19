@@ -1,14 +1,21 @@
+import crafttweaker.item.IItemStack;
 import mods.thermalexpansion.InductionSmelter;
 
 
 
-mods.thermalexpansion.InductionSmelter.removeRecipe(dustCharcoal, dustIron);
-mods.thermalexpansion.InductionSmelter.removeRecipe(dustCoal, dustIron);
+var cokes = [
+	<thermalfoundation:material:768>, // Coal Dust
+	<thermalfoundation:material:769>, // Charcoal Dust
+	<ic2:coke> // Coal Coke
+] as IItemStack[];
 
-mods.thermalexpansion.InductionSmelter.removeRecipe(dustCharcoal, ingotIron);
-mods.thermalexpansion.InductionSmelter.removeRecipe(dustCoal, ingotIron);
-
-
-mods.thermalexpansion.InductionSmelter.removeRecipe(<ic2:coke>, dustIron);
-
-mods.thermalexpansion.InductionSmelter.removeRecipe(<ic2:coke>, ingotIron);
+for solvent in cokes {
+	mods.thermalexpansion.InductionSmelter.removeRecipe(
+		solvent,
+		<minecraft:iron_ingot>
+	);
+	mods.thermalexpansion.InductionSmelter.removeRecipe(
+		solvent,
+		<thermalfoundation:material:0>
+	);
+}
